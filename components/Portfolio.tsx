@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { projects } from "@/data/projects";
 
 const MARQUEE = [
@@ -13,14 +13,15 @@ const ROTATOR_WORDS = ["imagine.", "describe.", "dream of.", "sketch."];
 /* ---------- decorative SVGs ---------- */
 
 function CheetahBlobCircle() {
+  const clipId = "cheetah-clip-" + useId().replace(/:/g, "");
   return (
     <svg viewBox="0 0 200 200">
       <defs>
-        <clipPath id={undefined}>
+        <clipPath id={clipId} clipPathUnits="userSpaceOnUse">
           <circle cx="100" cy="100" r="96" />
         </clipPath>
       </defs>
-      <g style={{ clipPath: "circle(96px at 100px 100px)" }}>
+      <g clipPath={"url(#" + clipId + ")"}>
         <rect width="200" height="200" fill="#D9A441" />
         <g fill="#2A1C0E">
           <path d="M20 30 q10 -12 24 -6 l-5 8 q-10 -5 -14 3z" />
@@ -42,9 +43,15 @@ function CheetahBlobCircle() {
 }
 
 function ZebraBlobCircle() {
+  const clipId = "zebra-clip-" + useId().replace(/:/g, "");
   return (
     <svg viewBox="0 0 200 200">
-      <g style={{ clipPath: "circle(96px at 100px 100px)" }}>
+      <defs>
+        <clipPath id={clipId} clipPathUnits="userSpaceOnUse">
+          <circle cx="100" cy="100" r="96" />
+        </clipPath>
+      </defs>
+      <g clipPath={"url(#" + clipId + ")"}>
         <rect width="200" height="200" fill="#F2E7D0" />
         <g stroke="#1C1510" strokeWidth="15" fill="none" strokeLinecap="round">
           <path d="M-10 30 q50 -20 100 0 t110 -4" />
