@@ -69,23 +69,34 @@ function Stickers() {
   return (
     <>
       <span className="sticker st-sun" title="golden hour, always">
+        {/* beaded sun with a serene face */}
         <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="20" fill="#D9A441" />
-          <g stroke="#D9A441" strokeWidth="4" strokeLinecap="round">
-            <line x1="50" y1="6" x2="50" y2="20" /><line x1="50" y1="80" x2="50" y2="94" />
-            <line x1="6" y1="50" x2="20" y2="50" /><line x1="80" y1="50" x2="94" y2="50" />
-            <line x1="19" y1="19" x2="29" y2="29" /><line x1="71" y1="71" x2="81" y2="81" />
-            <line x1="19" y1="81" x2="29" y2="71" /><line x1="71" y1="29" x2="81" y2="19" />
+          <g stroke="#C9892D" strokeWidth="4" strokeLinecap="round">
+            <line x1="50" y1="4" x2="50" y2="16" /><line x1="50" y1="84" x2="50" y2="96" />
+            <line x1="4" y1="50" x2="16" y2="50" /><line x1="84" y1="50" x2="96" y2="50" />
+            <line x1="18" y1="18" x2="27" y2="27" /><line x1="73" y1="73" x2="82" y2="82" />
+            <line x1="18" y1="82" x2="27" y2="73" /><line x1="73" y1="27" x2="82" y2="18" />
           </g>
+          <g fill="#C9892D">
+            <circle cx="50" cy="2.5" r="2.5" /><circle cx="50" cy="97.5" r="2.5" />
+            <circle cx="2.5" cy="50" r="2.5" /><circle cx="97.5" cy="50" r="2.5" />
+          </g>
+          <circle cx="50" cy="50" r="24" fill="#D9A441" stroke="#2A161D" strokeWidth="2" />
+          <circle cx="50" cy="50" r="19" fill="none" stroke="#95621C" strokeWidth="1.6" strokeDasharray="1.5 4" />
+          <path d="M39 46 q4 4 8 0" fill="none" stroke="#2A161D" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M53 46 q4 4 8 0" fill="none" stroke="#2A161D" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M46 58 q4 3.5 8 0" fill="none" stroke="#2A161D" strokeWidth="2.2" strokeLinecap="round" />
+          <circle cx="37" cy="54" r="2.6" fill="#C96F8B" opacity=".85" />
+          <circle cx="63" cy="54" r="2.6" fill="#C96F8B" opacity=".85" />
         </svg>
       </span>
       <span className="sticker st-eye" title="no bad vibes allowed">
         <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="46" fill="#1C1510" />
-          <circle cx="50" cy="50" r="34" fill="#F2E7D0" />
-          <circle cx="50" cy="50" r="22" fill="#D6336C" />
-          <circle cx="50" cy="50" r="11" fill="#1C1510" />
-          <circle cx="45" cy="45" r="4" fill="#F2E7D0" />
+          <circle cx="50" cy="50" r="46" fill="#2A161D" />
+          <circle cx="50" cy="50" r="34" fill="#F3E9D6" />
+          <circle cx="50" cy="50" r="22" fill="#A62963" />
+          <circle cx="50" cy="50" r="11" fill="#2A161D" />
+          <circle cx="45" cy="45" r="4" fill="#F3E9D6" />
         </svg>
       </span>
       <span className="sticker st-pendant" title="the necklace">
@@ -104,19 +115,28 @@ function Stickers() {
         <svg viewBox="0 0 100 100">
           <path
             d="M50 88 C20 66 8 46 12 30 C16 16 32 10 42 18 C46 21 49 25 50 28 C51 25 54 21 58 18 C68 10 84 16 88 30 C92 46 80 66 50 88 Z"
-            fill="#D6336C" stroke="#1C1510" strokeWidth="3"
+            fill="#A62963" stroke="#2A161D" strokeWidth="3"
           />
         </svg>
       </span>
-      <span className="sticker st-note" title="on rotation">
+      <span className="sticker st-moon" title="see you at golden hour">
+        {/* beaded crescent moon, eyes closed */}
         <svg viewBox="0 0 100 100">
-          <path d="M38 78 V26 l34 -8 v46" fill="none" stroke="#1C1510" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
-          <ellipse cx="30" cy="79" rx="12" ry="9" fill="#1C1510" />
-          <ellipse cx="64" cy="66" rx="12" ry="9" fill="#1C1510" />
+          <path
+            d="M66 8 A46 46 0 1 0 66 92 A38 38 0 1 1 66 8 Z"
+            fill="#D9A441" stroke="#2A161D" strokeWidth="2.5"
+          />
+          <path
+            d="M60 22 A34 34 0 1 0 60 78"
+            fill="none" stroke="#95621C" strokeWidth="1.6" strokeDasharray="1.5 4"
+          />
+          <path d="M38 44 q4 4 8 0" fill="none" stroke="#2A161D" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M42 60 q3.5 3 7 0" fill="none" stroke="#2A161D" strokeWidth="2.2" strokeLinecap="round" />
+          <path d="M82 18 L84.5 26 L92 28.5 L84.5 31 L82 39 L79.5 31 L72 28.5 L79.5 26 Z" fill="#A62963" />
         </svg>
       </span>
       <span className="sticker st-spark1">
-        <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#D6336C" /></svg>
+        <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#A62963" /></svg>
       </span>
       <span className="sticker st-spark2">
         <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#D9A441" /></svg>
@@ -345,7 +365,7 @@ export default function Portfolio() {
             </span>
           </h1>
           <svg className="scribble" viewBox="0 0 420 24" aria-hidden="true">
-            <path d="M6 14 q40 -16 90 -4 t100 2 t100 -6 t118 4" fill="none" stroke="#D6336C" strokeWidth="5" strokeLinecap="round" />
+            <path d="M6 14 q40 -16 90 -4 t100 2 t100 -6 t118 4" fill="none" stroke="#A62963" strokeWidth="5" strokeLinecap="round" />
             <path d="M30 20 q60 -10 130 -2 t180 -4" fill="none" stroke="#D9A441" strokeWidth="3" strokeLinecap="round" opacity=".8" />
           </svg>
           <p className="tagline">
@@ -378,6 +398,16 @@ export default function Portfolio() {
 
         <div className="marquee2" aria-hidden="true" />
         <div className="marquee" aria-hidden="true">
+          {/* the leopard running across striped velvet */}
+          <svg className="cat" viewBox="0 0 120 48">
+            <path
+              d="M6 30 q8 -14 20 -10 q2 -8 10 -9 q-2 6 2 7 q14 -6 30 -2 q10 2 16 -2 q6 -4 10 -1 q4 2 3 6 q-1 3 -5 4 q-6 1 -10 5 q6 2 12 8 l-6 2 q-8 -6 -14 -7 q-4 4 -12 5 l-2 6 l-5 -1 l1 -6 q-10 1 -18 -2 l-8 8 l-5 -2 l6 -9 q-12 -2 -15 -2 z"
+              fill="#2A161D"
+            />
+            <circle cx="52" cy="22" r="2.4" fill="#D9A441" />
+            <circle cx="66" cy="26" r="2.4" fill="#D9A441" />
+            <circle cx="42" cy="28" r="2" fill="#D9A441" />
+          </svg>
           <div className="track" ref={trackRef}>
             {[0, 1, 2].map((copy) => (
               <span key={copy}>
@@ -429,13 +459,16 @@ export default function Portfolio() {
           </div>
           <div className="me-visual from-r d1">
             <div className="photo-cheetah" aria-hidden="true" />
-            <div className={"arch"} ref={archRef}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/amna.webp" alt="Amna in golden hour light" />
-              <div className={"pixels" + (pixelsGone ? " gone" : "")} aria-hidden="true">
-                {pixels.map((d, i) => (
-                  <i key={i} style={{ transitionDelay: `${d.toFixed(2)}s` }} />
-                ))}
+            <div className="arch-stack">
+              <div className="arch-shadow" aria-hidden="true" />
+              <div className={"arch"} ref={archRef}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/amna.webp" alt="Amna in golden hour light" />
+                <div className={"pixels" + (pixelsGone ? " gone" : "")} aria-hidden="true">
+                  {pixels.map((d, i) => (
+                    <i key={i} style={{ transitionDelay: `${d.toFixed(2)}s` }} />
+                  ))}
+                </div>
               </div>
             </div>
             <span className="tape t1" aria-hidden="true" />
@@ -505,6 +538,11 @@ export default function Portfolio() {
             I build interfaces people remember.
           </p>
           <p className="sub from-b d1">— every scroll, hover and pixel on this page included ✦</p>
+          <div className="ylsg from-b d1" title="yes, you">
+            <div className="inner">
+              you look so good, <span className="b">baby</span> ✦
+            </div>
+          </div>
           <div className="rotation from-b d2">
             <div className="vinyl-zone">
               <div className="vinyl" />
