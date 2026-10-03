@@ -90,15 +90,6 @@ function Stickers() {
           <circle cx="63" cy="54" r="2.6" fill="#C96F8B" opacity=".85" />
         </svg>
       </span>
-      <span className="sticker st-eye" title="no bad vibes allowed">
-        <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="46" fill="#2A161D" />
-          <circle cx="50" cy="50" r="34" fill="#F3E9D6" />
-          <circle cx="50" cy="50" r="22" fill="#A62963" />
-          <circle cx="50" cy="50" r="11" fill="#2A161D" />
-          <circle cx="45" cy="45" r="4" fill="#F3E9D6" />
-        </svg>
-      </span>
       <span className="sticker st-pendant" title="the necklace">
         <svg viewBox="0 0 100 120">
           <line x1="20" y1="4" x2="50" y2="30" stroke="#D9A441" strokeWidth="4" />
@@ -109,14 +100,6 @@ function Stickers() {
             <line x1="34" y1="82" x2="34" y2="102" /><line x1="45" y1="82" x2="45" y2="108" />
             <line x1="56" y1="82" x2="56" y2="108" /><line x1="67" y1="82" x2="67" y2="102" />
           </g>
-        </svg>
-      </span>
-      <span className="sticker st-heart" title="with love">
-        <svg viewBox="0 0 100 100">
-          <path
-            d="M50 88 C20 66 8 46 12 30 C16 16 32 10 42 18 C46 21 49 25 50 28 C51 25 54 21 58 18 C68 10 84 16 88 30 C92 46 80 66 50 88 Z"
-            fill="#A62963" stroke="#2A161D" strokeWidth="3"
-          />
         </svg>
       </span>
       <span className="sticker st-moon" title="see you at golden hour">
@@ -342,7 +325,8 @@ export default function Portfolio() {
       <section className="slide hero" id="hero">
         <span className="blob b1" aria-hidden="true"><ZebraBlobCircle /></span>
         <span className="blob b2" aria-hidden="true"><CheetahBlobCircle /></span>
-        <span className="blob b3" aria-hidden="true"><ZebraBlobCircle /></span>
+        <span className="patch pa1" aria-hidden="true" />
+        <span className="patch pa2" aria-hidden="true" />
 
         <Stickers />
 
@@ -358,7 +342,7 @@ export default function Portfolio() {
             </span>
             <span className="row second">
               {"YAHIA".split("").map((c, i) => (
-                <span key={i} className="ltr o" style={{ animationDelay: `${0.36 + i * 0.06}s` }}>
+                <span key={i} className="ltr z" style={{ animationDelay: `${0.36 + i * 0.06}s` }}>
                   {c}
                 </span>
               ))}
@@ -381,9 +365,9 @@ export default function Portfolio() {
           <div className="certified">
             <span className="lead">certified ✦</span>
             <span className="fact">pixel-perfect or nothing</span>
-            <span className="fact">Rihanna scholar</span>
+            <span className="fact pz"><i className="plate">Rihanna scholar</i></span>
             <span className="fact">pool-day enthusiast</span>
-            <span className="fact">Cairo-made</span>
+            <span className="fact pc"><i className="plate">Cairo-made</i></span>
             <span className="fact">frontend engineer, AI platforms</span>
           </div>
           <div className="cta-row">
@@ -425,8 +409,14 @@ export default function Portfolio() {
 
       {/* SLIDE 2 · STORY */}
       <section className="slide" id="about">
+        <div className="patchband" aria-hidden="true">
+          <i className="p-cheetah" /><i className="p-berry" /><i className="p-zebra" /><i className="p-stripes" /><i className="p-emerald" /><i className="p-leopink" /><i className="p-plum" /><i className="p-zebra" />
+        </div>
         <div className="wrap me-row">
           <div className="me-copy from-l">
+            <div className="collage-card">
+            <span className="tape t3" aria-hidden="true" />
+            <span className="tape t4" aria-hidden="true" />
             <h2>
               Main character. <em>Also your</em> <span className="loud">frontend engineer.</span>
             </h2>
@@ -456,6 +446,7 @@ export default function Portfolio() {
                 <span className="where">Faculty of Computers &amp; Artificial Intelligence</span>
               </li>
             </ul>
+            </div>
           </div>
           <div className="me-visual from-r d1">
             <div className="photo-cheetah" aria-hidden="true" />
@@ -482,6 +473,12 @@ export default function Portfolio() {
 
       {/* SLIDE 3 · WORK */}
       <section className="slide" id="work">
+        <div className="patchband" aria-hidden="true">
+          <i className="p-zebra" /><i className="p-stripes" /><i className="p-cheetah" /><i className="p-plum" /><i className="p-leopink" /><i className="p-berry" /><i className="p-zebra" /><i className="p-amber" />
+        </div>
+        <span className="sticker st-w1" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#D9A441" /></svg>
+        </span>
         <div className="wrap">
           <div className="work-top">
             <div className="from-l">
@@ -499,6 +496,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="slider from-b d2">
+            <div className="deck-band" aria-hidden="true" />
             {projects.map((p, i) => (
               <article
                 key={p.name}
@@ -529,8 +527,15 @@ export default function Portfolio() {
 
       {/* SLIDE 4 · VIBE */}
       <section className="slide vibe" id="vibe">
+        <div className="patchband" aria-hidden="true">
+          <i className="p-stripes" /><i className="p-leopink" /><i className="p-amber" /><i className="p-zebra" /><i className="p-berry" /><i className="p-cheetah" /><i className="p-emerald" /><i className="p-stripes" />
+        </div>
         <span className="blob b4" aria-hidden="true"><CheetahBlobCircle /></span>
         <span className="blob b5" aria-hidden="true"><ZebraBlobCircle /></span>
+        <div className="vibe-band" aria-hidden="true" />
+        <span className="sticker st-v1" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#C9892D" /></svg>
+        </span>
         <div className="wrap">
           <p className="fill-text from-b" ref={fillRef}>
             I don&apos;t do basic.
@@ -563,7 +568,13 @@ export default function Portfolio() {
 
       {/* SLIDE 5 · CONTACT */}
       <section className="slide contact" id="contact">
-        <span className="blob b6" aria-hidden="true"><CheetahBlobCircle /></span>
+        <div className="patchband" aria-hidden="true">
+          <i className="p-leopink" /><i className="p-emerald" /><i className="p-stripes" /><i className="p-cheetah" /><i className="p-plum" /><i className="p-zebra" /><i className="p-berry" /><i className="p-cheetah" />
+        </div>
+        <span className="blob b6" aria-hidden="true"><ZebraBlobCircle /></span>
+        <span className="sticker st-c1" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#A62963" /></svg>
+        </span>
         <div className="wrap contact-grid">
           <div className="from-l">
             <h2>
